@@ -57,11 +57,7 @@ static TPDataManager *_sharedmanager = nil;
     [TPItem MR_truncateAll];
     [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
     NSArray *sampleItems = @[
-                             @{@"title": @"hello1",
-                               @"imagePath": imageFilePath},
-                             @{@"title": @"hello2",
-                               @"imagePath": imageFilePath},
-                             @{@"title": @"hello3",
+                             @{@"title": @"sample",
                                @"imagePath": imageFilePath},
                              ];
     for (NSDictionary *sampleItem in sampleItems) {

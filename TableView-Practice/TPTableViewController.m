@@ -98,4 +98,13 @@
     items = [TPItem MR_findAll];
     [self.tableView reloadData];
 }
+
+- (IBAction)addButtonWasPushed:(id)sender {
+    TPItem *item =[TPItem MR_createEntity];
+    TPDataManager *dataManager = [TPDataManager sharedManager];
+    item.imagePath = [NSString stringWithFormat:@"%@/sample.jpg",[dataManager documentsDirectory]];
+    TPDetailViewController *detailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"TPDetailViewController"];
+    detailVC.item = item;
+    [self.navigationController pushViewController:detailVC animated:YES];
+}
 @end

@@ -33,7 +33,6 @@
     self.titleTextField.delegate = self;
     UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageWasTapped:)];
     self.imageView.image = [UIImage imageWithContentsOfFile:self.item.imagePath];
-    self.imageView.userInteractionEnabled = YES;
     [self.imageView addGestureRecognizer:recognizer];
     
     [self registerForKeyboardNotifications];
@@ -92,13 +91,14 @@
 
 - (void)keyboardWasShown:(NSNotification*)aNotification
 {
-    CGPoint scrollPoint = CGPointMake(0.0,50.0);
+    CGPoint scrollPoint = CGPointMake(0.0,40.0);
     [self.scrollView setContentOffset:scrollPoint animated:YES];
 }
 
 - (void)keyboardWillBeHidden:(NSNotification*)aNotification
 {
-    [self.scrollView setContentOffset:CGPointZero animated:YES];
+    CGPoint scrollPoint = CGPointMake(0.0,-64.0);
+    [self.scrollView setContentOffset:scrollPoint animated:YES];
 }
 
 @end

@@ -10,5 +10,6 @@
 
 @interface TPTableViewController : UITableViewController
 - (IBAction)resetButtonWasPushed:(id)sender;
+- (IBAction)addButtonWasPushed:(id)sender;
 
 @end

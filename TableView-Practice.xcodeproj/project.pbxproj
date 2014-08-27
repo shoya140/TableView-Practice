@@ -23,7 +23,7 @@
 		C681105719ADE226007DA1C3 /* TableView_PracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C681105619ADE226007DA1C3 /* TableView_PracticeTests.m */; };
 		C681106219ADE29C007DA1C3 /* TPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C681106119ADE29C007DA1C3 /* TPTableViewController.m */; };
 		C681106519ADE2C7007DA1C3 /* TPDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C681106419ADE2C7007DA1C3 /* TPDetailViewController.m */; };
-		C681107219ADF272007DA1C3 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = C681107119ADF272007DA1C3 /* blank.png */; };
+		C6D4FCFE19AE60F9004A4891 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = C6D4FCFD19AE60F9004A4891 /* blank.png */; };
 		C6E423DC19ADF97300EE8495 /* Item.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C6E423DA19ADF97300EE8495 /* Item.xcdatamodeld */; };
 		C6E423DF19ADFA1300EE8495 /* TPItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E423DE19ADFA1300EE8495 /* TPItem.m */; };
 		C6E423E219ADFC9900EE8495 /* TPDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E423E119ADFC9900EE8495 /* TPDataManager.m */; };
@@ -62,7 +62,7 @@
 		C681106119ADE29C007DA1C3 /* TPTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPTableViewController.m; sourceTree = "<group>"; };
 		C681106319ADE2C7007DA1C3 /* TPDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPDetailViewController.h; sourceTree = "<group>"; };
 		C681106419ADE2C7007DA1C3 /* TPDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPDetailViewController.m; sourceTree = "<group>"; };
-		C681107119ADF272007DA1C3 /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
+		C6D4FCFD19AE60F9004A4891 /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
 		C6E423DB19ADF97300EE8495 /* Item.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Item.xcdatamodel; sourceTree = "<group>"; };
 		C6E423DD19ADFA1300EE8495 /* TPItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPItem.h; sourceTree = "<group>"; };
 		C6E423DE19ADFA1300EE8495 /* TPItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPItem.m; sourceTree = "<group>"; };
@@ -138,10 +138,10 @@
 				C681106119ADE29C007DA1C3 /* TPTableViewController.m */,
 				C681106319ADE2C7007DA1C3 /* TPDetailViewController.h */,
 				C681106419ADE2C7007DA1C3 /* TPDetailViewController.m */,
-				C681107119ADF272007DA1C3 /* blank.png */,
 				C681106919ADE969007DA1C3 /* Model */,
-				C681104319ADE226007DA1C3 /* Images.xcassets */,
+				C6D4FCFF19AE6103004A4891 /* Resource */,
 				C681103219ADE226007DA1C3 /* Supporting Files */,
+				C681104319ADE226007DA1C3 /* Images.xcassets */,
 			);
 			path = "TableView-Practice";
 			sourceTree = "<group>";
@@ -185,6 +185,14 @@
 				C6E423DE19ADFA1300EE8495 /* TPItem.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		C6D4FCFF19AE6103004A4891 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C6D4FCFD19AE60F9004A4891 /* blank.png */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C681107219ADF272007DA1C3 /* blank.png in Resources */,
+				C6D4FCFE19AE60F9004A4891 /* blank.png in Resources */,
 				C681104419ADE226007DA1C3 /* Images.xcassets in Resources */,
 				C681103619ADE226007DA1C3 /* InfoPlist.strings in Resources */,
 				C681103F19ADE226007DA1C3 /* Main.storyboard in Resources */,
