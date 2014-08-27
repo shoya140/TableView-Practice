@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TableViewController.h
 //  TableView-Practice
 //
 //  Created by Shoya Ishimaru on 2014/08/27.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TPTableViewController : UITableViewController
+- (IBAction)resetButtonWasPushed:(id)sender;
 
 @end
